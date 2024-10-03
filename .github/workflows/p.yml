@@ -19,13 +19,13 @@ jobs:
             echo "This job was triggered manually!"
 
 
-    - uses: oNaiPs/secrets-to-env-action@v1
-      with: 
-        secrets: ${{ toJSON(secrets) }}
+    # - uses: oNaiPs/secrets-to-env-action@v1
+    #   with: 
+    #     secrets: ${{ toJSON(secrets) }}
 
-    - name: l
-      run: |
-         echo "Value of MY_SECRET1: $LOL"
+    # - name: l
+    #   run: |
+    #      echo "Value of MY_SECRET1: $LOL"
 
     # - name: Dotenv Action
     #   uses: falti/dotenv-action@v1.1.4
