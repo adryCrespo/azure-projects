@@ -19,7 +19,7 @@ jobs:
 
     - name: 
       run: |
-        echo ls -lha
+         ls -lha
     # - uses: oNaiPs/secrets-to-env-action@v1
     #   with: 
     #     secrets: ${{ toJSON(secrets) }}
