@@ -20,7 +20,7 @@ jobs:
 
     - name: p2
       id: dotenv
-      uses: ./.github/actions/dotenv-action
+      uses: falti/dotenv-action@v1.1.4
 
     - name : p3
       run: | 
