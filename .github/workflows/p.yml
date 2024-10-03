@@ -1,9 +1,7 @@
 name: create_resource_group_azure 
 
 on:
-    push:
-        paths:
-        - 'secrets' 
+    push
 permissions:
   contents: write
 jobs:
