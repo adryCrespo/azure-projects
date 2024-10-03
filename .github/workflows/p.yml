@@ -1,7 +1,7 @@
 name: create_resource_group_azure 
 
 on:
-  manual triggers
+    push
     # paths:
     #   - 'data/new_data.csv'
 permissions:
