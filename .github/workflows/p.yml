@@ -35,4 +35,4 @@ jobs:
 
     - name: print2
       run: |
-            echo "${{.env.LOL }}"
+            echo "${{secrets.LOL }}"
