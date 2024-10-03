@@ -3,7 +3,7 @@ name: create_resource_group_azure
 on:
     push:
         paths:
-        - '.env'
+        - secrets 
 permissions:
   contents: write
 jobs:
@@ -19,9 +19,9 @@ jobs:
             echo "This job was triggered manually!"
 
 
-    # - uses: oNaiPs/secrets-to-env-action@v1
-    #   with: 
-    #     secrets: ${{ toJSON(secrets) }}
+    - uses: oNaiPs/secrets-to-env-action@v1
+      with: 
+        secrets: ${{ toJSON(secrets) }}
 
     # - name: l
     #   run: |
