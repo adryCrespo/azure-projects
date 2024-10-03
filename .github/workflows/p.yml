@@ -21,8 +21,10 @@ jobs:
     - name: p2
       id: dotenv
       uses: ./.github/actions/dotenv-action
+
     - name : p3
-      run: ${{ steps.dotenv.outputs.version }}
+      run: | 
+        echo "${{ steps.dotenv.outputs.version }}""
 
     # - name: print2
     #   run: |
