@@ -18,6 +18,11 @@ jobs:
       run: |
             echo "This job was triggered manually!"
 
-    - name: print2
-      run: |
-            echo "${{.env.LOL }}"
+    - name: p2
+      id: dotenv
+      uses: ./.github/actions/dotenv-action
+      run: ${{ steps.dotenv.outputs.version }}
+
+    # - name: print2
+    #   run: |
+    #         echo "${{.env.LOL }}"
