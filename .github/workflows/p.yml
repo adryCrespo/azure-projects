@@ -1,9 +1,9 @@
 name: create_resource_group_azure 
 
 on:
-    push
-    # paths:
-    #   - 'data/new_data.csv'
+    push:
+        paths:
+        - '.env'
 permissions:
   contents: write
 jobs:
@@ -12,9 +12,12 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Print a message
       run: |
             echo "This job was triggered manually!"
 
+    - name: print2
+      run: |
+            echo "${{.env.LOL }}"
